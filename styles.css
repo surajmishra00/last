@@ -1,0 +1,37 @@
+.container {
+    background-color: yellow;
+    display: flex;
+    flex-direction: column;
+    padding: 2%;
+    border: 3px dotted black;
+    gap: 1rem;
+}
+
+.item {
+    display: grid;
+    background-color: grey;
+    border: 3px solid black;
+    grid-template-rows: repeat(3, 1fr);
+    grid-template-columns: repeat(24, 1fr);
+}
+
+.image {
+    grid-column: span 2;
+    grid-row: span 3;
+}
+
+.title {
+    grid-row: span 1;
+    grid-column: span 22;
+    padding: 1rem;
+}
+
+.text {
+    grid-row: span 1;
+    grid-column: span 22;
+}
+
+.read-more {
+    grid-row: span 1;
+    grid-column: span 22;
+}
